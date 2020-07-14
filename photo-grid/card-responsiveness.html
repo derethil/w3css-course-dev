@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="../w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css">
+
+  <!--
+    This static webpage uses the following features from w3.css:
+      - content centering
+      - bars
+      - tags
+      - cards
+      - inputs
+      - modals
+      - sizing
+      - rounding corners
+      - w3.css grids
+      - display containers
+      - borders
+      - fonts
+      - padding / margins
+      - animations
+   -->
+
+</head>
+
+<body>
+
+  <!-- Content -->
+  <div class="w3-content" style="max-width: 1500px;">
+
+    <header class="w3-padding-48 w3-center">
+      <h1 class=" w3-text-dark-gray w3-montserrat"><b>Gallery</b></h1>
+
+      <div class="w3-row">
+        <div class="w3-card-4 search">
+          <div class="w3-xlarge" style="width:48px"><i class="fa fa-search"></i></div>
+          <input class="w3-input w3-montserrat" type="text" placeholder="Search">
+        </div>
+      </div>
+    </header>
+
+
+    <div class="w3-row-padding">
+
+      <div class="w3-third gallery-column">
+        <img src="../img/rocks.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo01').style.display='block'">
+        <img src="../img/sound.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo02').style.display='block'">
+        <img src="../img/woods.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo03').style.display='block'">
+        <img src="../img/rock.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo04').style.display='block'">
+        <img src="../img/nature.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo05').style.display='block'">
+        <img src="../img/mist.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo06').style.display='block'">
+      </div>
+
+      <div class="w3-third gallery-column">
+        <img src="../img/coffee.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo07').style.display='block'">
+        <img src="../img/bridge.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo08').style.display='block'">
+        <img src="../img/notebook.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo09').style.display='block'">
+        <img src="../img/london.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo10').style.display='block'">
+        <img src="../img/rocks.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo11').style.display='block'">
+        <img src="../img/avatar_g.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo12').style.display='block'">
+      </div>
+
+      <div class="w3-third gallery-column">
+        <img src="../img/mist.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo13').style.display='block'">
+        <img src="../img/workbench.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo14').style.display='block'">
+        <img src="../img/gondol.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo15').style.display='block'">
+        <img src="../img/skies.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo16').style.display='block'">
+        <img src="../img/lights.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo17').style.display='block'">
+        <img src="../img/workshop.jpg" class="w3-card-4" style="width:100%"
+          onclick="document.getElementById('photo18').style.display='block'">
+      </div>
+
+    </div>
+  </div>
+
+<!-- Modals -->
+<div id="photo01" class="w3-modal">
+<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+  <div class="modal-image w3-display-container" style="background-image: url(../img/rocks.jpg)">
+
+    <h2 class="w3-text-white w3-display-topleft w3-container w3-montserrat w3-bar">
+      <b class="w3-xxlarge w3-bar-item">Rocks</b>
+      <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Nature</b></span>
+      <span class="w3-tag w3-indigo w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Water</b></span>
+    </h2>
+
+    <span onclick="document.getElementById('photo01').style.display='none'"
+      class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+    <p class="w3-text-white w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+      consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+      nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+      illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+      dolorum inventore sunt doloremque?</p>
+  </div>
+
+</div>
+</div>
+
+<div id="photo02" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+    <div class="modal-image w3-display-container" style="background-image: url(../img/sound.jpg)">
+
+      <h2 class="w3-text-dark-gray w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Sound</b>
+        <span class="w3-tag w3-blue-gray w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Science</b></span>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Nature</b></span>
+      </h2>
+
+      <span onclick="document.getElementById('photo02').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+      <p class="w3-text-white w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="photo03" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+    <div class="modal-image w3-display-container" style="background-image: url(../img/woods.jpg)">
+
+      <h2 class="w3-text-dark-gray w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Woods</b>
+        <span class="w3-tag w3-blue-gray w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Trees</b></span>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Nature</b></span>
+      </h2>
+
+      <span onclick="document.getElementById('photo03').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+      <p class="w3-text-white w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="photo04" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+    <div class="modal-image w3-display-container" style="background-image: url(../img/rock.jpg)">
+
+      <h2 class="w3-text-dark-gray w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Rock</b>
+        <span class="w3-tag w3-blue-gray w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Mountain</b></span>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Forest</b></span>
+      </h2>
+
+      <span onclick="document.getElementById('photo04').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+      <p class="w3-text-white w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="photo05" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+    <div class="modal-image w3-display-container" style="background-image: url(../img/nature.jpg)">
+
+      <h2 class="w3-text-white w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Nature</b>
+        <span class="w3-tag w3-blue-gray w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Forest</b></span>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Very High</b></span>
+      </h2>
+
+      <span onclick="document.getElementById('photo05').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+      <p class="w3-text-white w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="photo06" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+    <div class="modal-image w3-display-container" style="background-image: url(../img/mist.jpg)">
+
+      <h2 class="w3-text-white w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Mist</b>
+        <span class="w3-tag w3-indigo w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Water (Vapor)</b></span>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Nature</b></span>
+      </h2>
+
+      <span onclick="document.getElementById('photo06').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+      <p class="w3-text-white w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="photo07" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+    <div class="modal-image w3-display-container" style="background-image: url(../img/coffee.jpg)">
+
+      <h2 class="w3-text-dark-gray w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Coffee</b>
+        <span class="w3-tag w3-blue-gray w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Yummy</b></span>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Food</b></span>
+      </h2>
+
+      <span onclick="document.getElementById('photo07').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+      <p class="w3-text-pink w3-border-pink w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="photo08" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+    <div class="modal-image w3-display-container" style="background-image: url(../img/bridge.jpg)">
+
+      <h2 class="w3-text-white w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Bridge</b>
+        <span class="w3-tag w3-blue-gray w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Engineering</b></span>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Nature</b></span>
+      </h2>
+
+      <span onclick="document.getElementById('photo08').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+      <p class="w3-text-white w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="photo09" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+    <div class="modal-image w3-display-container" style="background-image: url(../img/notebook.jpg)">
+
+      <h2 class="w3-text-dark-gray w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Notebook</b>
+        <span class="w3-tag w3-blue-gray w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Creative</b></span>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Soft</b></span>
+      </h2>
+
+      <span onclick="document.getElementById('photo09').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+      <p class="w3-text-white w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="photo10" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+    <div class="modal-image w3-display-container" style="background-image: url(../img/london.jpg)">
+
+      <h2 class="w3-text-white w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">London</b>
+        <span class="w3-tag w3-blue-gray w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Infrastructure</b></span>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Cities</b></span>
+      </h2>
+
+      <span onclick="document.getElementById('photo10').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+      <p class="w3-text-white w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="photo11" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+  
+    <div class="modal-image w3-display-container" style="background-image: url(../img/rocks.jpg)">
+  
+      <h2 class="w3-text-white w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Rocks</b>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Nature</b></span>
+        <span class="w3-tag w3-indigo w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Water</b></span>
+      </h2>
+  
+      <span onclick="document.getElementById('photo11').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+  
+      <p class="w3-text-white w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+  
+  </div>
+</div>
+
+<div id="photo12" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+  
+    <div class="modal-image w3-display-container" style="background-image: url(../img/avatar_g.jpg)">
+  
+      <h2 class="w3-text-white w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Woman</b>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Lighting</b></span>
+        <span class="w3-tag w3-indigo w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Human</b></span>
+      </h2>
+  
+      <span onclick="document.getElementById('photo12').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+  
+      <p class="w3-text-white w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+  
+  </div>
+</div>
+
+<div id="photo13" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+    <div class="modal-image w3-display-container" style="background-image: url(../img/mist.jpg)">
+
+      <h2 class="w3-text-white w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Mist</b>
+        <span class="w3-tag w3-indigo w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Water (Vapor)</b></span>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Nature</b></span>
+      </h2>
+
+      <span onclick="document.getElementById('photo13').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+      <p class="w3-text-white w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="photo14" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+    <div class="modal-image w3-display-container" style="background-image: url(../img/workbench.jpg)">
+
+      <h2 class="w3-text-white w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Workbench</b>
+        <span class="w3-tag w3-indigo w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Wood</b></span>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Work</b></span>
+      </h2>
+
+      <span onclick="document.getElementById('photo14').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+      <p class="w3-text-white w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="photo15" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+    <div class="modal-image w3-display-container" style="background-image: url(../img/gondol.jpg)">
+
+      <h2 class="w3-text-white w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Gondol</b>
+        <span class="w3-tag w3-indigo w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Skies</b></span>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Transport</b></span>
+      </h2>
+
+      <span onclick="document.getElementById('photo15').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+      <p class="w3-text-white w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="photo16" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+    <div class="modal-image w3-display-container" style="background-image: url(../img/skies.jpg)">
+
+      <h2 class="w3-text-dark-gray w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Skies</b>
+        <span class="w3-tag w3-indigo w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Water (Vapor)</b></span>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Clouds</b></span>
+      </h2>
+
+      <span onclick="document.getElementById('photo16').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+      <p class="w3-text-dark-gray w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin w3-border-dark-gray">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="photo17" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+    <div class="modal-image w3-display-container" style="background-image: url(../img/lights.jpg)">
+
+      <h2 class="w3-text-white w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Lights</b>
+        <span class="w3-tag w3-indigo w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Magnetic</b></span>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Borealis</b></span>
+      </h2>
+
+      <span onclick="document.getElementById('photo17').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+      <p class="w3-text-white w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="photo18" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+    <div class="modal-image w3-display-container" style="background-image: url(../img/workshop.jpg)">
+
+      <h2 class="w3-text-white w3-display-topleft w3-container w3-montserrat w3-bar">
+        <b class="w3-xxlarge w3-bar-item">Workshop</b>
+        <span class="w3-tag w3-indigo w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Wood</b></span>
+        <span class="w3-tag w3-green w3-text-white w3-large w3-round-xxlarge w3-bar-item w3-section"><b>Tools</b></span>
+      </h2>
+
+      <span onclick="document.getElementById('photo18').style.display='none'"
+        class="w3-button w3-display-topright w3-text-white"><b>&times;</b></span>
+
+      <p class="w3-text-dark-gray w3-border-dark-gray w3-container w3-display-bottomleft w3-montserrat w3-border-top w3-border-bottom w3-margin">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Asperiores enim, ipsam tenetur nam voluptatum porro perspiciatis excepturi,
+        nulla consectetur assumenda culpa ad quo suscipit qui veniam inventore soluta ut quisquam aliquid? Doloribus
+        illo excepturi quia molestias mollitia veniam, quae libero, laboriosam odit pariatur esse quod deleniti
+        dolorum inventore sunt doloremque?</p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+
+<script>
+  var modals = document.getElementsByClassName('w3-modal');
+
+  window.onclick = function (Event) {
+    for (var modal of modals) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  }
+</script>
+
+</html>

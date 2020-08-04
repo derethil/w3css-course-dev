@@ -1,0 +1,114 @@
+/* General Styles */
+
+body {
+    background: #FFFAFA;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #505050;
+}
+
+/* Main Content */
+
+#content {
+    background-color: #FFFAFA;
+    border-radius: 2px;
+    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    width: 75em;
+    margin: 10em auto 10em auto;
+}
+
+#col-container {
+    display: flex;
+    
+    border-bottom: 8px solid #1b5399;
+}
+
+.text-title {
+    letter-spacing: 5px;
+}
+
+.no-bullets {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Header */
+
+#header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+    border-bottom: 8px solid #1b5399;
+    border-top: 8px solid #1b5399;
+}
+
+#name {
+    text-align: right;
+    font-size: 3rem;
+
+    padding: 1em 3em 1em 0;
+   
+}
+
+#name > h1 {
+    margin: 0;
+    color: #1b5399;
+}
+
+#name > .light {
+    font-weight: 400;
+}
+
+/* Left Column */
+
+#left-col {
+    background-color: #1b5399;
+    color: #fffafa;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    flex: 0 0 25em;
+}
+
+.col-item {
+    margin: 1em;
+    padding: 35px;
+}
+
+.contact-item {
+    padding: .6em 0 .6em 0;
+    font-size: 1.1rem;
+}
+
+.contact-item i {
+    margin-right: 1em;
+    font-size: 1.6rem;
+}
+
+#skills-container li {
+    font-size: 2rem;
+}
+
+/* Right Column */
+
+#right-col-content {
+    padding: 4em 6em 4em 6em;
+    flex: 1;
+
+    word-spacing: 7px;
+}
+
+#experience {
+    margin-top: 6em;
+}
+
+.experience-item {
+    margin: 3em 0em;
+}
+
+.experience-item > * {
+    margin: 5px 0px 5px 0px;
+}

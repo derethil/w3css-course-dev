@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="../w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/fd7b2f50ce.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div class="w3-top">
+
+    <!-- Navbar on large screens -->
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+        onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-text-dark-gray w3-hover-white w3-button">HOME</a>
+      <a href="#gallery" class="w3-bar-item w3-text-dark-gray w3-hover-white w3-button w3-hide-small"><i
+          class="fas fa-utensils"></i> GALLERY</a>
+      <a href="#about" class="w3-bar-item w3-text-dark-gray w3-hover-white w3-button w3-hide-small"><i
+          class="fa fa-info-circle"></i> ABOUT</a>
+      <a href="#contact" class="w3-bar-item w3-text-dark-gray w3-hover-white w3-button w3-hide-small"><i
+          class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-card-4">
+      <a href="#gallery" class="w3-bar-item w3-button w3-hover-white" onclick="toggleFunction()">GALLERY</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hover-white" onclick="toggleFunction()">ABOUT</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hover-white" onclick="toggleFunction()">CONTACT</a>
+    </div>
+  </div>
+
+  <!-- Parallax Image -->
+  <div class="bgimg-1 w3-card-4 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-white w3-xlarge w3-wide w3-animate-opacity">MY PORTFOLIO</span>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="w3-content" style="max-width: 1500px;">
+
+    <div class="w3-row-padding w3-padding-64">
+      <header class="w3-padding-48 w3-center" id="gallery">
+        <h1 class=" w3-text-dark-gray w3-montserrat"><b>Gallery</b></h1>
+      </header>
+
+      <div class="w3-third gallery-column">
+        <img src="../img/rocks.jpg" class="w3-card-4" style="width:100%">
+        <img src="../img/sound.jpg" class="w3-card-4" style="width:100%">
+        <img src="../img/woods.jpg" class="w3-card-4" style="width:100%">
+        <img src="../img/rock.jpg" class="w3-card-4" style="width:100%">
+        <img src="../img/nature.jpg" class="w3-card-4" style="width:100%">
+        <img src="../img/mist.jpg" class="w3-card-4" style="width:100%">
+      </div>
+
+      <div class="w3-third gallery-column">
+        <img src="../img/coffee.jpg" class="w3-card-4" style="width:100%">
+        <img src="../img/bridge.jpg" class="w3-card-4" style="width:100%">
+        <img src="../img/notebook.jpg" class="w3-card-4" style="width:100%">
+        <img src="../img/london.jpg" class="w3-card-4" style="width:100%">
+        <img src="../img/rocks.jpg" class="w3-card-4" style="width:100%">
+        <img src="../img/avatar_g.jpg" class="w3-card-4" style="width:100%">
+      </div>
+
+      <div class="w3-third gallery-column">
+        <img src="../img/mist.jpg" class="w3-card-4" style="width:100%">
+        <img src="../img/workbench.jpg" class="w3-card-4" style="width:100%">
+        <img src="../img/gondol.jpg" class="w3-card-4" style="width:100%">
+        <img src="../img/skies.jpg" class="w3-card-4" style="width:100%">
+        <img src="../img/lights.jpg" class="w3-card-4" style="width:100%">
+        <img src="../img/workshop.jpg" class="w3-card-4" style="width:100%">
+      </div>
+
+    </div>
+
+    <div class="w3-row-padding w3-padding-large w3-margin-bottom" id="about">
+      <div class="w3-quarter w3-center"">
+        <img class="portrait w3-round-xlarge" src="portrait_square.jpeg">
+      </div>
+  
+      <div class="w3-threequarter w3-center">
+        <h1 class="w3-text-dark-gray w3-montserrat"><b>About Me</b></h1>
+  
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate nesciunt numquam quibusdam dolor,
+          consequuntur earum vel sunt exercitationem, a minus inventore aspernatur, voluptate tempora voluptates rem
+          blanditiis tenetur amet! Labore incidunt vel pariatur tempore deleniti voluptates sit consectetur accusantium,
+          eum corporis consequuntur beatae aut, esse tempora eveniet ex iure nulla omnis nemo delectus quis laborum at!
+          Voluptates veniam ut sit eaque doloremque voluptatem nemo dolor laudantium at perferendis ex quasi, vel in
+          minima. Earum dolor accusantium atque, sint voluptatum qui iste consequuntur nesciunt aliquid cupiditate est
+          repellat soluta magni magnam veniam architecto voluptatem quam dolorem debitis vero quas? Excepturi, nostrum.
+        </p>
+      </div>
+
+  </div>
+
+  <footer class="w3-center w3-dark-gray">
+    <div class="w3-bar w3-text-white">
+      <div class="w3-bar-item w3-large w3-hover-light-gray"><a href = "mailto:janedoe@mail.com">Contact Me</a></div>
+      <div class="w3-bar-item w3-large w3-hover-light-gray"><a href="#">Pricing</a></div>
+      <div class="w3-bar-item w3-large w3-hover-light-gray"><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+      <div class="w3-bar-item w3-large w3-hover-light-gray"><a href="#"><i class="fab fa-instagram"></i></a></div>
+      <div class="w3-bar-item w3-large w3-hover-light-gray"><a href="#"><i class="fab fa-twitter"></i></a></div>
+    </div>
+  </footer>
+
+
+</body>
+
+<script>
+  // Change style of navbar on scroll
+  window.onscroll = function () { myFunction() };
+  function myFunction() {
+    let navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      navbar.className = "w3-bar" + " w3-card" + " w3-white";
+    } else {
+      navbar.className = navbar.className.replace(" w3-card w3-white", "");
+    }
+  }
+
+  // Used to toggle the navbar on small screens when clicking on the menu button
+  function toggleFunction() {
+    let navButtons = document.getElementById("navDemo");
+    let navHeader = document.getElementById("myNavbar");
+
+    if (navButtons.className.indexOf("w3-show") == -1) {
+      navButtons.className += " w3-show";
+      navHeader.className += " w3-white";
+    } else {
+      navButtons.className = navButtons.className.replace(" w3-show", "");
+      navHeader.className = navHeader.className.replace(" w3-white", "");
+    }
+  }
+</script>
+
+</html>

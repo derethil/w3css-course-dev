@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+.w3-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gallery-column > img { 
+    margin-bottom: 12px;
+}
+
+.bgimg-1 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url('parallax.jpg');
+    min-height: 100%;
+}
+
+footer {
+    height: 48px;
+}
+
+a {
+    text-decoration: none;
+}
